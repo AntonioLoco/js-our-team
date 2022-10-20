@@ -81,9 +81,11 @@ for(let i = 0; i < teamMembers.length; i++){
     //Trasformare la stringa foto in una immagine effettiva
     const card = `
         <div class="card">
-            <h2>Nome: ${thisMember.name}</h2>
-            <h4>Ruolo nell'azienda: ${thisMember.roleCompany}</h4>
             <img src="img/${thisMember.srcPhoto}" alt="Photo ${thisMember.name}">
+            <div class="info-card">
+                <h2>${thisMember.name}</h2>
+                <h4>${thisMember.roleCompany}</h4>
+            </div>
         </div>
     `;
     cardsElement.innerHTML += card;
